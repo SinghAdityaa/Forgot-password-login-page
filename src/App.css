@@ -1,38 +1,119 @@
-.App {
+/* src/App.css */
+
+/* Global styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #eef2f5;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  text-align: center;
+  transition: box-shadow 0.3s ease;
+}
+
+.container:hover {
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+/* Title */
+h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #5DC983;
+  margin-bottom: 15px;
+}
+
+/* Paragraph description */
+p {
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Input styles */
+input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  outline: none;
+  border-color: #5DC983;
+  box-shadow: 0 0 8px rgba(93, 201, 131, 0.2);
+}
+
+/* Button styles */
+button {
+  background-color: #5DC983;
+  color: white;
+  padding: 12px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #4db872;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Secondary buttons, like Resend */
+button.secondary {
+  background-color: #ffffff;
+  color: #5DC983;
+  border: 1px solid #5DC983;
+}
+
+button.secondary:hover {
+  background-color: #f9f9f9;
+  color: #4db872;
+}
+
+/* Footer message (small info text) */
+.form-footer {
+  font-size: 12px;
+  color: #888;
+  margin-top: 15px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* Add some responsiveness */
+@media (max-width: 500px) {
+  .container {
+    padding: 20px;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  h2 {
+    font-size: 20px;
   }
-  to {
-    transform: rotate(360deg);
+
+  button {
+    padding: 10px;
   }
 }
