@@ -1,6 +1,4 @@
-/* src/App.css */
 
-/* Global styles */
 body {
   font-family: 'Roboto', sans-serif;
   background-color: #eef2f5;
@@ -27,7 +25,7 @@ body {
   box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
 }
 
-/* Title */
+
 h2 {
   font-size: 24px;
   font-weight: 600;
@@ -35,7 +33,7 @@ h2 {
   margin-bottom: 15px;
 }
 
-/* Paragraph description */
+
 p {
   margin-bottom: 20px;
   font-size: 14px;
@@ -43,7 +41,6 @@ p {
   line-height: 1.6;
 }
 
-/* Input styles */
 input {
   width: 100%;
   padding: 12px;
@@ -60,7 +57,6 @@ input:focus {
   box-shadow: 0 0 8px rgba(93, 201, 131, 0.2);
 }
 
-/* Button styles */
 button {
   background-color: #5DC983;
   color: white;
@@ -83,7 +79,6 @@ button:disabled {
   cursor: not-allowed;
 }
 
-/* Secondary buttons, like Resend */
 button.secondary {
   background-color: #ffffff;
   color: #5DC983;
@@ -95,7 +90,6 @@ button.secondary:hover {
   color: #4db872;
 }
 
-/* Footer message (small info text) */
 .form-footer {
   font-size: 12px;
   color: #888;
@@ -103,7 +97,6 @@ button.secondary:hover {
   text-align: center;
 }
 
-/* Add some responsiveness */
 @media (max-width: 500px) {
   .container {
     padding: 20px;

@@ -1,4 +1,3 @@
-// src/components/NewPassword.js
 import React, { useState } from 'react';
 
 const NewPassword = () => {
@@ -8,7 +7,6 @@ const NewPassword = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (password === confirmPassword) {
-      // Add logic to reset the password here
       alert('Password has been reset successfully!');
     } else {
       alert('Passwords do not match!');
